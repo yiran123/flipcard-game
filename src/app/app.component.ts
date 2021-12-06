@@ -1,5 +1,6 @@
 import { Component, VERSION } from '@angular/core';
 import { FormControl } from '@angular/forms';
+import { CardData } from './CardData.interface';
 
 @Component({
   selector: 'my-app',

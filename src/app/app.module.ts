@@ -11,7 +11,9 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DemoMaterialModule } from './material-module';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
-
+import { GameCardComponent } from './game-card/game-card.component';
+import { MainComponent } from './main/main.component';
+import { RestartDialogComponent } from './restart-dialog/restart-dialog.component';
 
 @NgModule({
   imports: [
@@ -23,7 +25,12 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
     BrowserAnimationsModule,
     DemoMaterialModule,
   ],
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    GameCardComponent,
+    MainComponent,
+    RestartDialogComponent,
+  ],
   bootstrap: [AppComponent],
   providers: [
     {
