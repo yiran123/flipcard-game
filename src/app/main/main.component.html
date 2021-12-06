@@ -9,8 +9,8 @@
   </p>
   <div class="grid p-16">
     <app-game-card
-      *ngFor="let c of cards; let idx = index"
-      [data]="c"
+      *ngFor="let card of cards; let idx = index"
+      [data]="card"
       (cardClicked)="cardClicked(idx)"
     >
     </app-game-card>
