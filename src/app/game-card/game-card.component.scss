@@ -1,25 +1,18 @@
-:host {
+/* :host {
   display: block;
-}
+} */
 
 .card {
-  -webkit-box-shadow: 10px 10px 43px -18px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 10px 10px 43px -18px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 10px 43px -18px rgba(0, 0, 0, 0.75);
-
-  border-radius: 5px;
-
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  height: 200px;
-
+  height: 306px;
   cursor: pointer;
-
   position: relative;
-
   transform-style: preserve-3d;
+  perspective: 800px;
 }
 
 .back,
@@ -27,7 +20,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
   backface-visibility: hidden;
 }
 
@@ -40,7 +33,8 @@
 }
 
 img {
-  width: 200px;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
   border-radius: 5px;
 }

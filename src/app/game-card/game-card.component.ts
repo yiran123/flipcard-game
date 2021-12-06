@@ -11,7 +11,7 @@ import {
 @Component({
   selector: "app-game-card",
   templateUrl: "./game-card.component.html",
-  styleUrls: ["./game-card.component.css"],
+  styleUrls: ["./game-card.component.scss"],
   animations: [
     trigger("cardFlip", [
       state(
@@ -29,9 +29,7 @@ import {
       state(
         "matched",
         style({
-          visibility: "true",
           transform: "perspective(600px) rotateY(180deg)",
-          // opacity: 0,
         })
       ),
       transition("default => flipped", [animate("400ms")]),
